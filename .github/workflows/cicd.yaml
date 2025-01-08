@@ -19,6 +19,17 @@ jobs: # creating jobs to perform steps
     
     - name: verify code in vm
       run: ls
-    
+
+    - name: install dependencies
+      run: | 
+        cd rajesh-ec2vpc-day333
+        npm install 
+        npm install -g aws-cdk 
+        
+    - name: compile code 
+      run: |
+        cd rajesh-ec2vpc-day333
+        cdk synth 
+      
 
 
