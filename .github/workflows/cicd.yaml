@@ -37,7 +37,7 @@ jobs: # creating jobs to perform steps
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: ${{ secrets.AWS_REGION }}
       run: |
-        cd rajesh-ec2vpc-day33
+        cd rajesh-ec2vpc-day333
         cdk deploy --require-approval never       
 
 
